@@ -1212,7 +1212,7 @@ before starting the move Sardana will check if the final position won't be out o
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Do you use user position transofrmation?";
+    item = "Do you use user position transformation?";
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future"];
