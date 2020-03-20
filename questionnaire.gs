@@ -1257,7 +1257,7 @@ gets into ALARM state, the resta of the motors are stopped.")
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Do you use psuedo motors?";
+    item = "Do you use pseudo motors?";
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future"];
