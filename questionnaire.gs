@@ -93,9 +93,9 @@ Thank you in advance for dedicating your time to that!')
         .setTitle('Spock questions');
 
     item = "Would you prefer to have Python based syntax to execute macros e.g. mv('mot01', 100) instead of mv mot01 100?";
-    var choices = ["Yes",
-        "Not now but I may use it in the future",
-        "Not now and I doubt I will use it in the future",
+    var choices = ["Yes, I would directly switch to it whenever available",
+        "If available I would still use the spock syntax but maybe at some point in the future I would switch to the python based syntax.",
+        "No, I think I would stick to the spock syntax even if the python based syntax was available",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
