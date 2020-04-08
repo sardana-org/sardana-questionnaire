@@ -41,7 +41,8 @@ Thank you in advance for dedicating your time to that!')
         .setTitle('Spock');
 
     item = "Do you use Spock?"
-    help = "Spock is a Command Line Interface (CLI) to Sardana"
+    help = "Spock is a Command Line Interface (CLI) to Sardana.\n\
+More info on Spock: www.sardana-controls.org/users/spock.html ."
     var spock = form.addMultipleChoiceItem();
     spock.setTitle(item)
         .setHelpText(help)
@@ -49,43 +50,54 @@ Thank you in advance for dedicating your time to that!')
     spock_questions = form.addPageBreakItem()
         .setTitle('Spock questions');
 
-    item = "Do you use square brackets syntax to pass repeat parameters";
+    item = "Do you use square brackets syntax to pass repeat parameters?"
+    help = "More info on Spock syntax: www.sardana-controls.org/users/spock.html#spock-syntax .";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use macrodata available in Spock?";
+    help = "The command macrodata allows to access to the last executed \
+macro data e.g. scan records.\n\
+More info on macrodata: www.sardana-controls.org/users/spock.html#accessing-macro-data ."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you edit macros from Spock using edmac?";
+    help = "The command edmac allows to edit the macros directly from Spock."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use ViewOptions?";
+    help = "The ViewOptions allows to customize the output displayed by certain macros.\n\
+More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-appearance-with-view-options"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -93,9 +105,9 @@ Thank you in advance for dedicating your time to that!')
         .setTitle('Spock questions');
 
     item = "Would you prefer to have Python based syntax to execute macros e.g. mv('mot01', 100) instead of mv mot01 100?";
-    var choices = ["Yes",
-        "Not now but I may use it in the future",
-        "Not now and I doubt I will use it in the future",
+    var choices = ["Yes, I would directly switch to it whenever available",
+        "If available I would still use the spock syntax but maybe at some point in the future I would switch to the python based syntax.",
+        "No, I think I would stick to the spock syntax even if the python based syntax was available",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
@@ -113,12 +125,14 @@ Thank you in advance for dedicating your time to that!')
         .setRequired(true);
 
     item = "Would you edit controllers from Spock using edctrl if it was possible?";
+    help = "edctrl command would be an equivalent to edmac command but for editing controller plugins at runtime from Spock"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -136,82 +150,105 @@ Thank you in advance for dedicating your time to that!')
     ])
 
     var macroexecutor_page = form.addPageBreakItem()
-        .setTitle('MacroExecutor');
+        .setTitle('macroexecutor');
 
-    item = "Do you use MacroExecutor?"
-    help = "MacroExecutor is one of the Graphical User Interfaces (GUI) to execute macros"
+    item = "Do you use macroexecutor?"
+    help = "macroexecutor is one of the Graphical User Interfaces (GUI) to execute macros.\n" +
+        "More info on macroexecutor: www.sardana-controls.org/users/taurus/macroexecutor.html"
     var macroexecutor = form.addMultipleChoiceItem();
     macroexecutor.setTitle(item)
         .setHelpText(help)
 
     macroexecutor_questions = form.addPageBreakItem()
-        .setTitle('MacroExecutor questions');
+        .setTitle('macroexecutor questions');
 
     item = "Do you use favourites?";
+    help = "Favourites allow to save macros together with the parameter values for later execution.\n" +
+        "More info on macroexecutor favourites: www.sardana-controls.org/users/taurus/macroexecutor.html#editing-favourites-list"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use history?";
+    help = "History saves already executed macros together with the parameter values for later execution.\n"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use duplication of repeat parameters?";
+    help = "Editing very complex repeat parameters, when one repetition " +
+        "differs from the other just by some values, can be simplified with the " +
+        "duplicate repetition feature."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you pause macro executor?";
+    help = "Some macros e.g. step scans can be paused in the middle of execution " +
+        "and later resumed. macroexecutor allows to pause and resume macros."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you edit macro parameters manually in the yellow Spock line?";
+    help = "Yellow Spock line is a sub-widget of macroexeuctor. It provides " +
+        "minimum functionality of Spock in graphical application."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     var macroexecutor_questions_new = form.addPageBreakItem()
-        .setTitle('MacroExecutor questions');
+        .setTitle('macroexecutor questions');
 
-    item = "Would you use custom widgets for editing macro parameters?";
+    item = "Would you use custom widgets for editing macro parameters if these " +
+        "were possible?";
+    help = "macroexecutor provides generic widget for editing macros. It is able " +
+        "to visualize any parameters definition thanks to the tree view, however " +
+        "may not be as user friendly as a custom widget tailored for the needs " +
+        "of a given macro. Custom widgets for editing macro parameters would be " +
+        "plugins to the macroexecutor."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     var macroexecutor_comments = form.addPageBreakItem()
-        .setTitle('MacroExecutor comments');
+        .setTitle('macroexecutor comments');
 
     item = "Do you have any comments about the macroexecutor?";
     form.addParagraphTextItem()
@@ -229,12 +266,17 @@ Thank you in advance for dedicating your time to that!')
         .setTitle('MacroButton');
 
     item = "Do you use MacroButton/any GUI that uses MacroButton?";
+    help = "MacroButton is a very powerful widget for executing macros which " +
+        "provides features like start/pause/resume/stop macro execution, macro " +
+        "status and progress in a very reduced space.\n" +
+        "More info on MacroButton: www.sardana-controls.org/users/taurus/macrobutton.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     macrobutton = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -247,53 +289,79 @@ Thank you in advance for dedicating your time to that!')
         .setRequired(false);
 
     var sequencer_page = form.addPageBreakItem()
-        .setTitle('Sequencer');
+        .setTitle('sequencer');
 
-    item = "Do you use Sequencer?"
-    help = "Sequencer is the Graphical User Interfaces (GUI) to compose and execute macro sequences"
+    item = "Do you use sequencer?"
+    help = "sequencer is the Graphical User Interfaces (GUI) to compose and execute macro sequences. \n" +
+        "More info on sequencer: www.sardana-controls.org/users/taurus/sequencer.html"
     var sequencer = form.addMultipleChoiceItem();
     sequencer.setTitle(item)
         .setHelpText(help)
 
     sequencer_questions = form.addPageBreakItem()
-        .setTitle('Sequencer questions');
+        .setTitle('sequencer questions');
 
     item = "Do you save/load XML sequences?";
+    help = "Sequences can be saved into a file and later on (even after " +
+        "the application restart) loaded."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
+    item = "Do you load spock syntax sequences?";
+    help = "Sequences can be loaded from a text file written in spock syntax " +
+        "(one macro per line)."
+    var choices = ["Yes",
+        "Not now but I may use it in the future",
+        "Not now and I doubt I will use it in the future",
+        "No and this feature does not have sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     var sequencer_questions_new = form.addPageBreakItem()
-        .setTitle('Sequencer questions');
+        .setTitle('sequencer questions');
 
     item = "Would you like to edit the sequence while running?";
+    help = "Only the part of the sequence which was not yet executed. " +
+      "For example add new macros to the sequence or modify macro parameters."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
-        .setHelpText("For example add new macros to the sequence or modify macro parameters")
+        .setHelpText(help)
         .setRequired(true);
 
     item = "Would you use custom widgets for editing macro parameters?";
+    help = "sequencer provides generic widget for editing macros. It is able " +
+        "to visualize any parameters definition thanks to the tree view, however " +
+        "may not be as user friendly as a custom widget tailored for the needs " +
+        "of a given macro. Custom widgets for editing macro parameters would be " +
+        "plugins to the sequencer."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     var sequencer_comments = form.addPageBreakItem()
-        .setTitle('Sequencer');
+        .setTitle('sequencer');
 
     item = "Do you have any comments about the sequencer?";
     form.addParagraphTextItem()
@@ -312,8 +380,10 @@ Thank you in advance for dedicating your time to that!')
 
     var item = form.addCheckboxItem();
     item.setTitle('What do you use to configure measurement group?')
-        .setHelpText("By configuring measurement group we mean: defining measurement group, \
-adding/removing/organizing channels, configuring channels e.g enabled, timer, synchronizer, etc.")
+        .setHelpText("By configuring measurement group we mean: defining measurement group, " +
+            "adding/removing/organizing channels, configuring channels " +
+            "e.g enabled, timer, synchronizer, etc.\n" +
+            "More info on expconf: www.sardana-controls.org/users/taurus/experimentconfiguration.html")
         .setChoices([
             item.createChoice('expconf'),
             item.createChoice('defmeas, senv ActiveMnrGrp ...'),
@@ -326,6 +396,8 @@ meas_set_synchronizer, etc. if these were existing'),
 
     var item = form.addCheckboxItem();
     item.setTitle('What do you use to configure scan data storage?')
+        .setHelpText("Scans can save data in files (or other destinations) in different formats.\n" +
+            "More info on expconf: www.sardana-controls.org/users/taurus/experimentconfiguration.html")
         .setChoices([
             item.createChoice('expconf'),
             item.createChoice('newfile'),
@@ -336,7 +408,10 @@ meas_set_synchronizer, etc. if these were existing'),
         .setRequired(true);
 
     var item = form.addCheckboxItem();
-    item.setTitle('What do you use to configure snapshot?')
+    item.setTitle('What do you use to configure pre-scan snapshot group?')
+        .setHelpText("Pre-scan snapshot is a one-time readout of the " +
+            "elements/attributes configured in the pre-scan snapshot group.\n" +
+            "More info on expconf: www.sardana-controls.org/users/taurus/experimentconfiguration.html")
         .setChoices([
             item.createChoice('expconf'),
             item.createChoice('snap macros e.g. defsnap, udefsnap, ...'),
@@ -357,8 +432,10 @@ meas_set_synchronizer, etc. if these were existing'),
         .setTitle('Online scan plotting');
 
     item = "Do you use the online scan plotting a.k.a. showscan online?";
+    help = "More info on showscan online: www.sardana-controls.org/users/taurus/showscan.html#showscan-online"
     showscan_online = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setRequired(true);
 
     var showscanonline_questions_new = form.addPageBreakItem()
@@ -403,8 +480,10 @@ meas_set_synchronizer, etc. if these were existing'),
         .setTitle('Offline scan plotting');
 
     item = "Do you use the offline scan plotting a.k.a. showscan?";
+    help = "More info on showscan: www.sardana-controls.org/users/taurus/showscan.html#showscan-offline"
     showscanoffline = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setRequired(true);
 
     var showscanoffline_questions_new = form.addPageBreakItem()
@@ -441,6 +520,7 @@ were merged to faciliate the data comparison?";
         .setTitle('Taurus form with the Pool moveables');
 
     item = "Do you use the Taurus form with the Pool moveables a.k.a Pool Motor Taurus Value (PMTV)?";
+    help = "More info on PMTV: www.sardana-controls.org/users/taurus/poolmotortv.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
@@ -448,6 +528,7 @@ were merged to faciliate the data comparison?";
     taurusformmoveable = form.addMultipleChoiceItem()
         .setChoiceValues(choices)
         .setTitle(item)
+        .setHelpText(help)
         .setRequired(true);
 
     var taurusformmoveable_comments = form.addPageBreakItem()
@@ -520,12 +601,14 @@ were merged to faciliate the data comparison?";
 
     item = "Would you use Sardana editor for editing \
 macros/cotrollers/recorders if this one was finished?";
+    help = "More info on Sardana editor: www.sardana-controls.org/users/taurus/sardanaeditor.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     sardanaeditor = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -569,133 +652,171 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
         .setTitle('Macro features questions');
 
     item = "Do you develop macros with parameter(s)?";
+    help = "More info on macro parameters: www.sardana-controls.org/devel/howto_macros/macros_general.html#adding-parameters-to-your-macro"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros with optional parameter(s)?";
+    help = "More info on optional parameters: www.sardana-controls.org/devel/howto_macros/macros_general.html#optional-parameters"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros with result(s)?";
+    help = "More info on macro result: www.sardana-controls.org/devel/howto_macros/macros_general.html#returning-a-macro-result"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros which call other macros?";
+    help = "More info on calling other macros: www.sardana-controls.org/devel/howto_macros/macros_general.html#sardana-macro-calling"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros which add programatic hooks to other macros?";
+    help = "More info on adding macro hooks programmatically: www.sardana-controls.org/devel/howto_macros/macros_general.html#adding-hooks-support"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop hookable macros i.e. macros which accept attaching hooks to them?";
+    help = "More info on developing hookable macros: www.sardana-controls.org/devel/howto_macros/macros_general.html#adding-hooks-support"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros which use custom environment variables?";
+    help = "More info on accessing environment: www.sardana-controls.org/devel/howto_macros/macros_general.html#accessing-environment"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use macro logging feature?";
+    help = "More info on macro logging: www.sardana-controls.org/users/macro_logging_and_reports.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use macro report feature?";
+    help = "More info on macro report: www.sardana-controls.org/users/macro_logging_and_reports.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros with on_stop/on_abort methods?";
+    help = "More info on on_stop/on_abort methods: www.sardana-controls.org/devel/howto_macros/macros_general.html#handling-macro-stop-and-abort"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use macro plotting feature?";
+    help = "More info on macro plotting: www.sardana-controls.org/devel/howto_macros/macros_general.html#plotting"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros which report progress?";
+    help = "More info on reporting macro progress: www.sardana-controls.org/devel/howto_macros/macros_general.html#showing-progress-in-long-macros"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you develop macros which execute simultaneous actions \
 e.g. while moving motors do other things?";
+    help = "More info on executing simultaneous actions in macros: www.sardana-controls.org/devel/howto_macros/macros_general.html#simultaneous-actions"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
+    item = "Do you develop interactive macros i.e. which ask for user input?";
+    help = "More info on interactive macros: www.sardana-controls.org/devel/howto_macros/macros_general.html#asking-for-user-input"
+    var choices = ["Yes",
+        "Not now but I may do it in the future",
+        "Not now and I doubt I will do it in the future",
+        "No and this feature does not have sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -728,11 +849,13 @@ e.g.: mv, ct, lsm, etc.";
         .setTitle('General hooks');
 
     item = "Do you use general hooks?";
+    help = "More info on general hooks: www.sardana-controls.org/users/macro_hooks.html#general-hooks"
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future"]
     general_hooks = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -749,8 +872,10 @@ e.g.: mv, ct, lsm, etc.";
         .setTitle('Scans');
 
     item = "Do you use Sardana scans (or Generic Scan Framework)?";
+    help = "More info on scans: www.sardana-controls.org/users/scan.html#scans"
     scans = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setRequired(true);
 
     scans_questions = form.addPageBreakItem()
@@ -758,29 +883,36 @@ e.g.: mv, ct, lsm, etc.";
 
     item = "Do you execute turn-key step scans: ascans: ascan, a2scan, a3scan,\
 a4scan dscans: dscan, ... mesh, fscan?";
+    help = "More info on turn-key scan macros: www.sardana-controls.org/users/standard_macro_catalog.html#scan-macros"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Do you program and execute custom step scans (using scan point generator)";
+    item = "Do you program and execute custom step scans (using Generic Scan Framework)";
+    help = "More info on Generic Scan Framework: www.sardana-controls.org/devel/howto_macros/scan_framework.html#scan-framework"
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you execute timescan?";
+    help = "timescan is a special type of a scan which does not involve any moveable " +
+      "and performs a synchronized successive acquisitions with a given time period."
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -796,12 +928,14 @@ a4scan dscans: dscan, ... mesh, fscan?";
         .setTitle('Continuous scans questions');
 
     var item = form.addCheckboxItem();
+    help = "More info on turn-key scan macros: www.sardana-controls.org/users/standard_macro_catalog.html#scan-macros"
     item.setTitle('Which continuous scans do you use?')
         .setChoices([
             item.createChoice('ascanc, dscanc, etc. (also for multiple motors)'),
             item.createChoice('ascanct, dscanct, etc. (also for multiple motors)'),
             item.createChoice('meshct'),
         ])
+        .setHelpText(help)
         .showOtherOption(true)
         .setRequired(true);
 
@@ -816,12 +950,14 @@ a4scan dscans: dscan, ... mesh, fscan?";
         .setRequired(true);
 
     item = "Do you use pseudo counters in continuous scans?";
+    help = "More info on pseudo counters: www.sardana-controls.org/devel/overview/overview_pseudocounter.html"
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -840,24 +976,29 @@ i.e. with waypoint generator?";
         .setRequired(true);
 
     item = "Would you like that external channels e.g. Tango attributes were supported \
-by continuous scans (not requiring to define a controller/channel)?";
+by continuous scans"
+    help = "Currently it is necessary to define an instance of the TangoAttrCTController controller and a channel.";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Would you like that pseudo counters not based on any experimental channels \
 were supported by continuous scans?";
+    help = "Currently only pseudo counters based on other experimental channels are supported by continuous scans.\n" +
+    "More info on pseudo counters: www.sardana-controls.org/devel/overview/overview_pseudocounter.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -866,13 +1007,16 @@ were supported by continuous scans?";
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
+    help = "Currently moveables' positions in continuous scans are theoretical values calculated a priori. " +
+    "Furthermore non linear pseudo motors' positions are wrongly calculated."
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Would you like to decouple software synchronized experimental channels \
-so the slower ones does not block the faster ones??";
+so the slower ones does not block the faster ones?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
@@ -906,8 +1050,10 @@ so the slower ones does not block the faster ones??";
         .setTitle('Data storage');
 
     item = "Do you store data in Sardana scans?";
+    help = "More info on data storage: www.sardana-controls.org/devel/howto_recorders.html#writing-recorders"
     datastorage = form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setRequired(true);
 
     datastorage_questions = form.addPageBreakItem()
@@ -915,7 +1061,7 @@ so the slower ones does not block the faster ones??";
 
     var item = form.addCheckboxItem();
     item.setTitle('Which destinations do you use?')
-        .setHelpText("Destination examples: file in a give format, database, etc.")
+        .setHelpText("Destination examples: file in a given format, database, etc.")
         .setChoices([
             item.createChoice('HDF5 (using Sardana built-in recorder implemented with h5py module)'),
             item.createChoice('HDF5 (using Sardana built-in recorder implemented with nxs module)'),
@@ -967,10 +1113,12 @@ but outside of the `showscan online` feature'),
         .setTitle('Data acquisition');
 
     item = "Do you use data acquisition natively integrated in Sardana?";
+    help =
     acquisition = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("By natively integrated in Sardana we mean provided by the Device Pool \
-e.g. experimental channels, measurement group, etc.")
+        .setHelpText("By natively integrated in Sardana we mean provided by the Device Pool " +
+        "e.g. experimental channels, measurement group, etc. \n" +
+        "More info on data acquisition: www.sardana-controls.org/users/acquisition.html")
         .setRequired(true);
 
     var acquisition_questions_timerable = form.addPageBreakItem()
@@ -979,7 +1127,11 @@ e.g. experimental channels, measurement group, etc.")
     item = "Do you use timerable experimental channels?";
     timerable = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Timerable experimental channels includes: counter/timer, 1D and 2D")
+        .setHelpText("Timerable experimental channels includes: counter/timer, 1D and 2D" +
+            "More info on timerable channels: \n " +
+            "www.sardana-controls.org/devel/overview/overview_countertimer.html \n" +
+            "www.sardana-controls.org/devel/overview/overview_1D.html \n" +
+            "www.sardana-controls.org/devel/overview/overview_2D.html" )
         .setRequired(true);
 
     timerable_questions = form.addPageBreakItem()
@@ -996,22 +1148,28 @@ e.g. experimental channels, measurement group, etc.")
 
     item = "Do you use different timer channel for a controller in different applications \
 i.e. in different measurement groups?";
+    help = "Timer channel in a controller is the one which controls when a single acquisition starts and ends " +
+        " i.e. the one to be called the LoadOne method."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Do you use count to monitor acquisition mode?";
+    help = "In count to monitor acquisition mode the end of the acquisition happens when the monitor channel " +
+        "reaches a given number of counts."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1030,12 +1188,12 @@ e.g. at the beginning of a scan, it uses `PrepareOne` controller's method")
     item = "Do you use per acquisition preparation?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
-        "Not now and I doubt I will use it in the future",
+                   "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Per acquisition preparation is executed once at the beginning of each acquisition \
-e.g. at the beginning of a step, it uses `LoadOne` controller's method")
+e.g. at the beginning of a step, it uses `LoadOne` controller's method.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1047,19 +1205,19 @@ e.g. at the beginning of a step, it uses `LoadOne` controller's method")
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("By hardware synchronization we mean that an external hardware \
-controls the acquisition of the experimental channel controller")
+controls the acquisition of the experimental channel controller.")
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Do you use single acquisition?";
+    item = "Do you use experimental channel acquisition?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("By single acquisition we mean that the channel is direclty commanded \
-to acquire without the need to define a measurement group")
+        .setHelpText("By experimental channel acquisition we mean that the channel is directly commanded \
+to acquire without the need to define a measurement group.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1078,29 +1236,34 @@ to acquire without the need to define a measurement group")
         "Not now and I doubt I will use them in the future"];
     timerable = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("0D experimental channels reads values as fast as possible during the integration time, \
-buffers them and finally calculate the result")
+        .setHelpText("0D experimental channels reads values as fast as possible during the integration time, " +
+            "buffers them and finally calculate the result.\n " +
+            "More info on 0D experimental channels: www.sardana-controls.org/devel/overview/overview_0D.html")
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Would you like to have more calculation options available to apply on the 0D experimental channel's buffer, \
 or maybe even be able to easily add new calculations as plugins?";
+    help = "Currently the only available caluclations are sum and average."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Would you like to be able to execute single acquisition on 0D experimental channels?";
+    item = "Would you like to be able to execute experimental channel acquisition on 0D experimental channels?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText("By experimental channel acquisition we mean that the channel is directly commanded \
+to acquire without the need to define a measurement group")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1110,7 +1273,8 @@ or maybe even be able to easily add new calculations as plugins?";
         "Not now and I doubt I will use them in the future"];
     timerable = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Pseudo counters allow you to execute calculations using the acquisition values")
+        .setHelpText("Pseudo counters allow you to execute calculations using the acquisition values.\n" +
+            "More info on pseudo counters: www.sardana-controls.org/devel/overview/overview_pseudocounter.html")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1121,6 +1285,8 @@ or maybe even be able to easily add new calculations as plugins?";
         "No and this feature does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText("By experimental channel acquisition we mean that the channel is directly commanded \
+to acquire without the need to define a measurement group")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1132,7 +1298,7 @@ or maybe even be able to easily add new calculations as plugins?";
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("For example different instances of the 'average pseudo counter controller' could have \
-different number of physical channels: one be an average of two channels and the other of six channels")
+different number of physical channels: one be an average of two channels and the other of six channels.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1187,7 +1353,7 @@ e.g. motor, psuedo motors, etc.")
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Backlash correcion compensate backlash errors typical to stepper motors")
+        .setHelpText("Backlash correction compensate backlash errors typical to stepper motors.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1197,7 +1363,7 @@ e.g. motor, psuedo motors, etc.")
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Backlash correcion compensate backlash errors typical to stepper motors")
+        .setHelpText("Software limits prevents motion from going beyond the safe range set by the user.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1212,26 +1378,25 @@ before starting the move Sardana will check if the final position won't be out o
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Do you use user position transformation?";
+    item = "Do you use the user position transformation?";
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("By user position transformation we mean that Sardana calculates user \
-position using the steps_per_unit, offset and sign.")
+position using the hardware position, steps_per_unit, offset and sign.")
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Do you use dial position attribute?";
+    item = "Do you use the dial position attribute?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this attribute does not have sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("By user position transformation we mean that Sardana calculates user \
-position using the steps_per_unit, offset and sign.")
+        .setHelpText("Dial position is a result of transformation of the hardware position and the steps per unit factor.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1253,7 +1418,7 @@ position using the steps_per_unit, offset and sign.")
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Emergency break protects the grouped motion, for example, when one motor \
-gets into ALARM state, the resta of the motors are stopped.")
+gets into ALARM state, the rest of the motors are stopped.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1263,6 +1428,7 @@ gets into ALARM state, the resta of the motors are stopped.")
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText("More info on pseudo motors: www.sardana-controls.org/devel/overview/overview_pseudomotor.html")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1277,12 +1443,14 @@ gets into ALARM state, the resta of the motors are stopped.")
         .setRequired(true);
 
     item = "Do you use HKL pseudo motors?";
+    help = "HKL allows perform motion with the diffractometers in the reciprocal space. \n" +
+        "More info on difractometer control: www.sardana-controls.org/users/diffractometer.html"
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("HKL allows perform motion with the diffractometers in the reciprocal space.")
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
