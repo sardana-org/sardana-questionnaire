@@ -55,7 +55,7 @@ More info on Spock: www.sardana-controls.org/users/spock.html ."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -69,7 +69,7 @@ More info on macrodata: www.sardana-controls.org/users/spock.html#accessing-macr
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -81,7 +81,7 @@ More info on macrodata: www.sardana-controls.org/users/spock.html#accessing-macr
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -94,7 +94,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -108,7 +108,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes, I would directly switch to it whenever available",
         "If available I would still use the spock syntax but maybe at some point in the future I would switch to the python based syntax.",
         "No, I think I would stick to the spock syntax even if the python based syntax was available",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -118,7 +118,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -129,7 +129,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -168,7 +168,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -180,7 +180,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -194,7 +194,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -207,7 +207,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -220,7 +220,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -240,7 +240,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -259,7 +259,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
         macroexecutor.createChoice("Yes", FormApp.PageNavigationType.CONTINUE),
         macroexecutor.createChoice("Not now but I may use it in the future", macroexecutor_questions_new),
         macroexecutor.createChoice("Not now and I doubt I will use it in the future", macroexecutor_comments),
-        macroexecutor.createChoice("No and this feature does not have sense to me", macroexecutor_comments),
+        macroexecutor.createChoice("No and this feature does not make sense to me", macroexecutor_comments),
     ])
 
     var macrobutton_page = form.addPageBreakItem()
@@ -273,7 +273,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     macrobutton = form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -307,7 +307,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -320,7 +320,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -336,7 +336,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -353,7 +353,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -372,7 +372,7 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
         sequencer.createChoice("Yes", FormApp.PageNavigationType.CONTINUE),
         sequencer.createChoice("Not now but I may use it in the future", sequencer_questions_new),
         sequencer.createChoice("Not now and I doubt I will use it in the future", sequencer_comments),
-        sequencer.createChoice("No and this feature does not have sense to me", sequencer_comments),
+        sequencer.createChoice("No and this feature does not make sense to me", sequencer_comments),
     ])
 
     var expconf_page = form.addPageBreakItem()
@@ -445,7 +445,7 @@ meas_set_synchronizer, etc. if these were existing'),
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -455,7 +455,7 @@ meas_set_synchronizer, etc. if these were existing'),
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -473,7 +473,7 @@ meas_set_synchronizer, etc. if these were existing'),
         showscan_online.createChoice("Yes", FormApp.PageNavigationType.CONTINUE),
         showscan_online.createChoice("Not now but I may use it in the future", showscanonline_questions_new),
         showscan_online.createChoice("Not now and I doubt I will use it in the future", showscanonline_comments),
-        showscan_online.createChoice("No and this feature does not have sense to me", showscanonline_comments),
+        showscan_online.createChoice("No and this feature does not make sense to me", showscanonline_comments),
     ])
 
     var showscanoffline_page = form.addPageBreakItem()
@@ -495,7 +495,7 @@ were merged to faciliate the data comparison?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -513,7 +513,7 @@ were merged to faciliate the data comparison?";
         showscanoffline.createChoice("Yes", FormApp.PageNavigationType.CONTINUE),
         showscanoffline.createChoice("Not now but I may use it in the future", showscanoffline_questions_new),
         showscanoffline.createChoice("Not now and I doubt I will use it in the future", showscanoffline_comments),
-        showscanoffline.createChoice("No and this feature does not have sense to me", showscanoffline_comments),
+        showscanoffline.createChoice("No and this feature does not make sense to me", showscanoffline_comments),
     ])
 
     var taurusformmoveable_page = form.addPageBreakItem()
@@ -524,7 +524,7 @@ were merged to faciliate the data comparison?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     taurusformmoveable = form.addMultipleChoiceItem()
         .setChoiceValues(choices)
         .setTitle(item)
@@ -547,7 +547,7 @@ were merged to faciliate the data comparison?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     taurusformchannel = form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -568,7 +568,7 @@ were merged to faciliate the data comparison?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     taurusformior = form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -605,7 +605,7 @@ macros/cotrollers/recorders if this one was finished?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     sardanaeditor = form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -656,7 +656,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -668,7 +668,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -680,7 +680,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -692,7 +692,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -704,7 +704,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -716,7 +716,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -728,7 +728,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -740,7 +740,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -752,7 +752,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -764,7 +764,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -776,7 +776,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -788,7 +788,7 @@ e.g. I miss interface for... , I don't like the current look-and-feel because...
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -801,7 +801,7 @@ e.g. while moving motors do other things?";
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -813,7 +813,7 @@ e.g. while moving motors do other things?";
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -825,7 +825,7 @@ e.g.: mv, ct, lsm, etc.";
     var choices = ["Yes",
         "Not now but I may do it in the future",
         "Not now and I doubt I will do it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -943,7 +943,7 @@ a4scan dscans: dscan, ... mesh, fscan?";
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -954,7 +954,7 @@ a4scan dscans: dscan, ... mesh, fscan?";
     var choices = ["Yes",
         "Not now but I may use them in the future",
         "Not now and I doubt I will use them in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -969,7 +969,7 @@ i.e. with waypoint generator?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -981,7 +981,7 @@ by continuous scans"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -995,7 +995,7 @@ were supported by continuous scans?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -1006,7 +1006,7 @@ were supported by continuous scans?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     help = "Currently moveables' positions in continuous scans are theoretical values calculated a priori. " +
     "Furthermore non linear pseudo motors' positions are wrongly calculated."
     form.addMultipleChoiceItem()
@@ -1020,7 +1020,7 @@ so the slower ones does not block the faster ones?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setChoiceValues(choices)
@@ -1153,7 +1153,7 @@ i.e. in different measurement groups?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -1166,7 +1166,7 @@ i.e. in different measurement groups?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -1177,7 +1177,7 @@ i.e. in different measurement groups?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Per measurement preparation is executed once at the beginning of a measurement \
@@ -1189,7 +1189,7 @@ e.g. at the beginning of a scan, it uses `PrepareOne` controller's method")
     var choices = ["Yes",
         "Not now but I may use it in the future",
                    "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Per acquisition preparation is executed once at the beginning of each acquisition \
@@ -1201,7 +1201,7 @@ e.g. at the beginning of a step, it uses `LoadOne` controller's method.")
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("By hardware synchronization we mean that an external hardware \
@@ -1213,7 +1213,7 @@ controls the acquisition of the experimental channel controller.")
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("By experimental channel acquisition we mean that the channel is directly commanded \
@@ -1248,7 +1248,7 @@ or maybe even be able to easily add new calculations as plugins?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText(help)
@@ -1259,7 +1259,7 @@ or maybe even be able to easily add new calculations as plugins?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("By experimental channel acquisition we mean that the channel is directly commanded \
@@ -1282,7 +1282,7 @@ to acquire without the need to define a measurement group")
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("By experimental channel acquisition we mean that the channel is directly commanded \
@@ -1294,7 +1294,7 @@ to acquire without the need to define a measurement group")
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this feature does not have sense to me"];
+        "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("For example different instances of the 'average pseudo counter controller' could have \
@@ -1393,7 +1393,7 @@ position using the hardware position, steps_per_unit, offset and sign.")
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this attribute does not have sense to me"];
+        "No and this attribute does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Dial position is a result of transformation of the hardware position and the steps per unit factor.")
@@ -1404,7 +1404,7 @@ position using the hardware position, steps_per_unit, offset and sign.")
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
-        "No and this attribute does not have sense to me"];
+        "No and this attribute does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Base rate is the starting frequency at which stepper motor will be started to move.")
@@ -1414,7 +1414,7 @@ position using the hardware position, steps_per_unit, offset and sign.")
     item = "Are you happy with the emergency break feature?";
     var choices = ["Yes",
         "I would change it but, it make sense",
-        "No and this feature does not have sense to me, "];
+        "No and this feature does not make sense to me, "];
     form.addMultipleChoiceItem()
         .setTitle(item)
         .setHelpText("Emergency break protects the grouped motion, for example, when one motor \
