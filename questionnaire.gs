@@ -1471,6 +1471,47 @@ gets into ALARM state, the rest of the motors are stopped.")
     var general = form.addPageBreakItem()
         .setTitle('General questions/comments');
 
+    item = "Would you use an official Sardana configuration tool/format that we plan to develop?";
+    help = "Currently Sardana only provides configuration macros e.g. defctrl, defelem, " +
+        " defmeas, etc. Other configuration tools were developed at DESY (XML based) " +
+        "or MAXIV (JSON based) - dsconfig."
+    var choices = ["Yes",
+        "Not now but I may use it in the future",
+        "Not now and I doubt I will use it in the future",
+        "No and this tool does not have sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
+    item = "Would you benefit from being able to connect multiple Pools " +
+            "to a MacroServer without the usability limitations.";
+    help = "Currently MeasurementGroup can contain channels only from the same Pool." +
+        "Also pseudo elements e.g. pseudo motors, can be based on elements from the same Pool."
+    var choices = ["Yes",
+        "Not now but I may use it in the future",
+        "Not now and I doubt I will use it in the future",
+        "No and this feature does not have sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
+    item = "If it was possible to use Sardana without Tango and this would" +
+        " provide significant improvements would you switch to use it?";
+    help = "Currently Sardana requires Tango control system to run."
+    var choices = ["Yes",
+        "Not now but I may do it in the future",
+        "Not now and I doubt I will do it in the future",
+        "No and this does not have sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
     item = "What do you think about the Sardana documentation?";
     form.addParagraphTextItem()
         .setTitle(item)
