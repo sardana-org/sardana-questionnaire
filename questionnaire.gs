@@ -1236,15 +1236,15 @@ to acquire without the need to define a measurement group.")
         "Not now and I doubt I will use them in the future"];
     timerable = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("0D experimental channels reads values as fast as possible during the integration time, " +
-            "buffers them and finally calculate the result.\n " +
+        .setHelpText("0D experimental channels read values as fast as possible during the integration time, " +
+            "buffer them and finally calculate the result.\n " +
             "More info on 0D experimental channels: www.sardana-controls.org/devel/overview/overview_0D.html")
         .setChoiceValues(choices)
         .setRequired(true);
 
     item = "Would you like to have more calculation options available to apply on the 0D experimental channel's buffer, \
 or maybe even be able to easily add new calculations as plugins?";
-    help = "Currently the only available caluclations are sum and average."
+    help = "Currently the only available calculations are sum and average."
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
@@ -1353,7 +1353,7 @@ e.g. motor, psuedo motors, etc.")
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Backlash correction compensate backlash errors typical to stepper motors.")
+        .setHelpText("Backlash correction compensates backlash errors typical to stepper motors.")
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -1363,7 +1363,7 @@ e.g. motor, psuedo motors, etc.")
         "Not now and I doubt I will use them in the future"];
     form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Software limits prevents motion from going beyond the safe range set by the user.")
+        .setHelpText("Software limits prevent motion from going beyond the safe range set by the user.")
         .setChoiceValues(choices)
         .setRequired(true);
 
