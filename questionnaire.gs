@@ -922,6 +922,16 @@ a4scan dscans: dscan, ... mesh, fscan?";
         .setChoiceValues(choices)
         .setRequired(true);
 
+        item = "Would you like that we put efforts to optimize step scans and eliminate dead times as much as possible?";
+    var choices = ["Yes",
+        "Not now but it may give me benefits in the future",
+        "Not now and I doubt I will give me benefits in the future",
+        "No and this optimization does not make sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
     item = "Do you execute timescan?";
     help = "timescan is a special type of a scan which does not involve any moveable " +
       "and performs a synchronized successive acquisitions with a given time period."
