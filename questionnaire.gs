@@ -405,8 +405,8 @@ More info on QtSpock: www.sardana-controls.org/users/taurus/qtspock.html"
         .setChoices([
             item.createChoice('expconf'),
             item.createChoice('defmeas, senv ActiveMnrGrp ...'),
-            item.createChoice('I would use macros e.g. meas_set_enabled, meas_get_enabled, \
-meas_set_synchronizer, etc. if these were existing'),
+            item.createChoice('I will use macros set_meas_conf and get_meas_conf\
+available from Sardana v3.'),
             item.createChoice('I don\'t use measurement groups')
         ])
         .showOtherOption(true)
