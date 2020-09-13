@@ -1155,8 +1155,8 @@ but outside of the `showscan online` feature'),
     item = "Do you use timerable experimental channels?";
     timerable = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Timerable experimental channels includes: counter/timer, 1D and 2D" +
-            "More info on timerable channels: \n " +
+        .setHelpText("Timerable experimental channels includes: counter/timer, 1D and 2D.\n" +
+            "More info on timerable channels: \n" +
             "www.sardana-controls.org/devel/overview/overview_countertimer.html \n" +
             "www.sardana-controls.org/devel/overview/overview_1D.html \n" +
             "www.sardana-controls.org/devel/overview/overview_2D.html" )
@@ -1306,7 +1306,7 @@ to acquire without the need to define a measurement group")
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Would you like to be able to execute single acquisition on pseudo counter experimental channels?";
+    item = "Would you like to be able to execute experimental channel acquisition on pseudo counters?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
