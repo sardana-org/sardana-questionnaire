@@ -114,13 +114,31 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Would you use Spock in Qt application if this was possible";
+    item = "Do you use QtSpock?";
+    help = "QtSpock is a Qt widget which allows to embed Spock in Qt application.\n\
+More info on QtSpock: www.sardana-controls.org/users/taurus/qtspock.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
         "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
+    item = "Would you execute macros in Jupyter (IPython) Notebook if this was possible?";
+    help = "The Jupyter Notebook allows you to create and share documents that contain live code, equations, " +
+        "visualizations and narrative text. In case of Spock notebook cells could e.g., execute macros with Python syntax or widgets, " +
+        "offer macro execution control with widgets, visualize macro results with online plots, have easy access to macro data, etc.\n\
+        More info on Jupyter Notebook: www.jupyter.org"
+    var choices = ["Yes",
+        "Not now but I may use it in the future",
+        "Not now and I doubt I will use it in the future",
+        "No and this feature does not make sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
@@ -387,8 +405,8 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
         .setChoices([
             item.createChoice('expconf'),
             item.createChoice('defmeas, senv ActiveMnrGrp ...'),
-            item.createChoice('I would use macros e.g. meas_set_enabled, meas_get_enabled, \
-meas_set_synchronizer, etc. if these were existing'),
+            item.createChoice('I will use macros set_meas_conf and get_meas_conf\
+available from Sardana v3.'),
             item.createChoice('I don\'t use measurement groups')
         ])
         .showOtherOption(true)
@@ -904,6 +922,16 @@ a4scan dscans: dscan, ... mesh, fscan?";
         .setChoiceValues(choices)
         .setRequired(true);
 
+        item = "Would you like that we put efforts to optimize step scans and eliminate dead times as much as possible?";
+    var choices = ["Yes",
+        "Not now but it may give me benefits in the future",
+        "Not now and I doubt I will give me benefits in the future",
+        "No and this optimization does not make sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
     item = "Do you execute timescan?";
     help = "timescan is a special type of a scan which does not involve any moveable " +
       "and performs a synchronized successive acquisitions with a given time period."
@@ -1127,8 +1155,8 @@ but outside of the `showscan online` feature'),
     item = "Do you use timerable experimental channels?";
     timerable = form.addMultipleChoiceItem()
         .setTitle(item)
-        .setHelpText("Timerable experimental channels includes: counter/timer, 1D and 2D" +
-            "More info on timerable channels: \n " +
+        .setHelpText("Timerable experimental channels includes: counter/timer, 1D and 2D.\n" +
+            "More info on timerable channels: \n" +
             "www.sardana-controls.org/devel/overview/overview_countertimer.html \n" +
             "www.sardana-controls.org/devel/overview/overview_1D.html \n" +
             "www.sardana-controls.org/devel/overview/overview_2D.html" )
@@ -1278,7 +1306,7 @@ to acquire without the need to define a measurement group")
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Would you like to be able to execute single acquisition on pseudo counter experimental channels?";
+    item = "Would you like to be able to execute experimental channel acquisition on pseudo counters?";
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
