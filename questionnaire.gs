@@ -114,7 +114,9 @@ More info on ViewOptions: www.sardana-controls.org/users/spock.html#changing-app
         .setChoiceValues(choices)
         .setRequired(true);
 
-    item = "Would you use Spock in Qt application if this was possible";
+    item = "Do you use QtSpock?";
+    help = "QtSpock is a Qt widget which allows to embed Spock in Qt application.\n\
+More info on QtSpock: www.sardana-controls.org/users/taurus/qtspock.html"
     var choices = ["Yes",
         "Not now but I may use it in the future",
         "Not now and I doubt I will use it in the future",
