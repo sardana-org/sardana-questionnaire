@@ -123,6 +123,22 @@ More info on QtSpock: www.sardana-controls.org/users/taurus/qtspock.html"
         "No and this feature does not make sense to me"];
     form.addMultipleChoiceItem()
         .setTitle(item)
+        .setHelpText(help)
+        .setChoiceValues(choices)
+        .setRequired(true);
+
+    item = "Would you execute macros in Jupyter (IPython) Notebook if this was possible?";
+    help = "The Jupyter Notebook allows you to create and share documents that contain live code, equations, " +
+        "visualizations and narrative text. In case of Spock notebook cells could e.g., execute macros with Python syntax or widgets, " +
+        "offer macro execution control with widgets, visualize macro results with online plots, have easy access to macro data, etc.\n\
+        More info on Jupyter Notebook: www.jupyter.org"
+    var choices = ["Yes",
+        "Not now but I may use it in the future",
+        "Not now and I doubt I will use it in the future",
+        "No and this feature does not make sense to me"];
+    form.addMultipleChoiceItem()
+        .setTitle(item)
+        .setHelpText(help)
         .setChoiceValues(choices)
         .setRequired(true);
 
