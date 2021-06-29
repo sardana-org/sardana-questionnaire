@@ -34,7 +34,7 @@ slide: [https://hackmd.io/@reszelaz/Bk53UScj_](https://hackmd.io/@reszelaz/Bk53U
 #### How to interpret the results?
 
 - Questions were asked in the order from the top to the bottom components. Starting with the client applications (Spock and Taurus GUI) and ending with the action's control (acquisition and motion)
-- Results are presented accoring to the component's popularity. Starting with the most popular components and ending with the least popular components.
+- Results are presented according to the component's popularity. Starting with the most popular components and ending with the least popular components.
 - Most of the results contain: count graphs, score graphs and comments.
 
 ----
@@ -55,7 +55,7 @@ Most of the questions were formed in a way to respond either:
 #### Score graphs
 
 Count graphs and score graphs are ordered according to the following score:
-answers 1 * 1 + answers 2 * 2 + answers 3 * 4 (the score is beneficial for this features which are used today).
+answers 1 * 1 + answers 2 * 2 + answers 3 * 4 (the score is beneficial for those features which are used today).
 
 Score graphs basically contain the score result.
 
@@ -95,7 +95,7 @@ Score graphs basically contain the score result.
 
 #### Motion Comments
 
-Ah teh famous set_lm and set_lim which affects soft limits to user and dial positions but are not synchronized though user and dial postions are through teh offsets. I remeber having complained about it it long time ago. I would hve expected tha dial and us soft limits to be synchronized by teh offset. What is funny now is that one can settle limits so that user position is within soft limts but not dial...
+Ah the famous set_lm and set_lim which affects soft limits to user and dial positions but are not synchronized through user and dial postions are through the offsets. I remeber having complained about it a long time ago. I would have expected tha dial and user soft limits to be synchronized by the offset. What is funny now is that one can settle limits so that user position is within soft limts but not dial...
 
 ---
 
@@ -136,7 +136,7 @@ Often it is tricky to trace back the source of an error. e.g. when errors like "
 
 ##### Comment #3
 
-The user interface in Spock emulates to a large extent the the one of speck. It would be nice to get more speck features, e.g. the possibility to print sevral command in one line. ( I am aware that I can write my own  script that emulates whatever I like )
+The user interface in Spock emulates to a large extent the the one of SPEC. It would be nice to get more SPEC features, e.g. the possibility to print several command in one line. ( I am aware that I can write my own  script that emulates whatever I like )
 
 ----
 
@@ -155,7 +155,7 @@ The Sardana environment should be stable in the qtspock. To simplify commands si
 
 ##### Comment #5 - part 2
 
-Second beneficial feature would be to configure the motor sequence to display for the “wa” command not noly alphabetic order. It would need to be connected with the enable/disable command.
+Second beneficial feature would be to configure the motor sequence to display for the “wa” command not only alphabetic order. It would need to be connected with the enable/disable command.
 
 ----
 
@@ -202,9 +202,9 @@ Second beneficial feature would be to configure the motor sequence to display fo
 
 ##### Comment #1 - part 1
 
-Well we are not using pseudocounter but so called attribute counters. to my knowledge mspd was teh first to request and have it deployed continuous scan, so callad madscan. Now exist ascanct which we are using but whaih has severla drwabacks.
+Well we are not using pseudocounter but so called attribute counters. to my knowledge mspd was the first to request and have it deployed continuous scan, so called madscan. Now exist ascanct which we are using but what has several drwabacks.
 
-The way of feeding the continuous scan (start stop number of points integertaion time) might lead to unrealistic speed fro teh motor.
+The way of feeding the continuous scan (start stop number of points integration time) might lead to unrealistic speed fro the motor.
 
 ----
 
